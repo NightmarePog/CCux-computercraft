@@ -1,0 +1,5 @@
+<blue> # man</>
+
+<white>-- usage: </><red>man <command></>
+
+<white>this command will show you a </><red><command></><white> manual so you know how to use it</>

@@ -1,0 +1,2 @@
+<red> Hello world! </><cyan>meow</>
+<cyan> How are you? </>

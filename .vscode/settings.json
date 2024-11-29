@@ -1,0 +1,16 @@
+{
+    "Lua.diagnostics.globals": [
+        "term",
+        "fs",
+        "textutils",
+        "shell",
+        "colors",
+        "read",
+        "keys",
+        "reboot",
+        "write",
+        "pullEvent",
+        "sleep",
+    ]
+
+}
