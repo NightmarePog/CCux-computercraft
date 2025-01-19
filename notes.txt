@@ -1,0 +1,2 @@
+recrafted:
+require() - /rom/startup/10_package
