@@ -1,6 +1,21 @@
-local api = require("/CCux-computercraft/boot/init-CCux")
-term.write("init module initialized")
-term.write("Kernel module failed to load, press any key to continue...")
+function loadfile(file)
+    local handle, err = fs.open(file, "r")
+    if not handle then
+      return nil, err
+    end
+  
+    local data = handle.readAll()
+    handle.close()
+  
+    return load(data, "="..file, "t", _G)
+  end
 
+local runinit = loadfile("/CCux-computercraft/boot/init-CCux.lua")()
+
+local n = 1
 while true do
+    n = n+1
+    term.write(n)
+    term.scroll(1)
 end
+
