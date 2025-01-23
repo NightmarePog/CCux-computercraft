@@ -12,6 +12,7 @@ unix like standard commands(cat, man, stuff u know in linux and other unix like 
 basic git program
 X window
 Package Manager
+Unix permission system
 
 # some info
 Right now, OS will be made basically again from roots because I wanna create some real safe kernel and this just couldn't work with it 
