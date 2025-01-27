@@ -5,7 +5,7 @@ but also keeping all the old APIs so there is maximal compatibility with CraftOS
 
 # TODO
 new File system
-completely isolate kernel from OS
+completely isolate unix-like kernel from OS
 permission manager
 shell
 unix like standard commands(cat, man, stuff u know in linux and other unix like OS)
