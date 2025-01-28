@@ -25,3 +25,4 @@ also, I am not really good programmer so the code might not be really good
 # Thanks to the
 ## JackMacWindows - for unbios script
 ## Ocawesome101 - part of Recrafted(his OS) is used in CCux kernel
+:3
