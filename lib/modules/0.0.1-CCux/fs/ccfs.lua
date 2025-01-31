@@ -11,3 +11,4 @@ local restriced_dictionaries = {"/lib/modules/0.0.1-CCux", "/etc", "/boot"}
 local hidden = {"/metadata"}
 
 -- I am crazy
+-- uh
