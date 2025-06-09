@@ -1,43 +1,69 @@
-local VFS = require("vfs")
-local fs = VFS:new()
+-- ✍️ Minimal print
+local function log(text)
+  term.write(text .. "\n")
+end
 
--- 🗂️ Vytvoř složky
-print("Vytvářím /home a /home/user ...")
+-- 📦 Load vfs.lua
+local f = fs.open("/VFS/vfs.lua", "r")
+local src = f.readAll()
+f.close()
+local vfs_loader, err = load(src, "/VFS/vfs.lua", "t", _ENV)
+if not vfs_loader then error("Load error: " .. err) end
+local VFS = vfs_loader()
+
+-- 🚀 Load or Initialize
+log("🔄 Loading latest snapshot...")
+local fs = VFS.loadLatestSnapshot()
+if not fs then
+  log("❌ No snapshot found, creating new VFS...")
+  fs = VFS:new()
+else
+  log("✅ Snapshot loaded.")
+end
+
+-- 🗂️ Create folders
+log("📁 Creating /home and /home/user ...")
 fs:createDir("/home")
 fs:createDir("/home/user")
 
--- 📄 Vytvoř soubor
-print("Vytvářím /home/user/readme.txt ...")
-fs:createFile("/home/user/readme.txt", "Toto je testovací soubor.")
+-- 📄 Create a file
+log("📄 Creating /home/user/readme.txt ...")
+fs:createFile("/home/user/readme.txt", "This is a test file.")
 
--- 📖 Čtení souboru
+-- 📖 Read the file
 local content, err = fs:readFile("/home/user/readme.txt")
 if content then
-  print("Obsah /home/user/readme.txt:", content)
+  log("📖 Content of /home/user/readme.txt: " .. content)
 else
-  print("Chyba při čtení:", err)
+  log("⚠️ Error reading file: " .. err)
 end
 
--- 📋 Výpis obsahu složky
-print("Obsah /home:")
+-- 📋 List contents of folder
+log("📂 Contents of /home:")
 local list, err = fs:list("/home")
 if list then
   for _, item in ipairs(list) do
-    print(" - " .. item)
+    log(" - " .. item)
   end
 else
-  print("Chyba při list:", err)
+  log("⚠️ Error listing folder: " .. err)
 end
 
--- ❌ Mazání souboru
-print("Mažu /home/user/readme.txt ...")
+-- ❌ Delete the file
+log("🗑️ Deleting /home/user/readme.txt ...")
 fs:remove("/home/user/readme.txt")
 
--- ✅ Zkus znovu načíst smazaný soubor
+-- ✅ Try reading the deleted file
 local contentAfter, err = fs:readFile("/home/user/readme.txt")
 if not contentAfter then
-  print("Očekávaná chyba po mazání:", err)
+  log("✅ Expected error after deletion: " .. err)
 end
 
--- ✅ Hotovo
-print("Testování dokončeno.")
+-- 💾 Save snapshot
+log("💾 Saving VFS snapshot...")
+fs:saveSnapshot("/snapshots")
+
+-- ✅ Done
+log("✅ Testing complete. Waiting 5 seconds before exit...")
+local t0 = os.clock()
+while os.clock() - t0 < 5 do end

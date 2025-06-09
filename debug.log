@@ -1,0 +1,291 @@
+[4.434] Loaded file.lua source
+[4.434] Compiled file.lua
+[4.434] Loaded dir.lua source
+[4.434] Compiled dir.lua
+[4.434] Initializing VFS class...
+[4.434] VFS module fully loaded
+[4.434] Creating new VFS instance
+[4.434] Creating directory at: /home
+[4.434] Splitting path: /home
+[4.434] Directory created: /home
+[4.435] Creating directory at: /home/user
+[4.435] Splitting path: /home/user
+[4.435] Directory created: /home/user
+[4.435] Creating file at: /home/user/readme.txt
+[4.435] Splitting path: /home/user/readme.txt
+[4.435] File created: /home/user/readme.txt
+[4.435] Reading file: /home/user/readme.txt
+[4.435] Resolving path: /home/user/readme.txt
+[4.435] Splitting path: /home/user/readme.txt
+[4.435] Resolved path successfully: /home/user/readme.txt
+[4.435] File read successfully: /home/user/readme.txt
+[4.435] Listing directory: /home
+[4.435] Resolving path: /home
+[4.435] Splitting path: /home
+[4.435] Resolved path successfully: /home
+[4.435] Directory listed: /home
+[4.435] Removing: /home/user/readme.txt
+[4.435] Splitting path: /home/user/readme.txt
+[4.435] Removed: /home/user/readme.txt
+[4.436] Reading file: /home/user/readme.txt
+[4.436] Resolving path: /home/user/readme.txt
+[4.436] Splitting path: /home/user/readme.txt
+[4.436] Resolve failed: Path not found - readme.txt
+[4.436] Read failed: Path not found: readme.txt
+[2.145] Loaded file.lua source
+[2.145] Compiled file.lua
+[2.145] Loaded dir.lua source
+[2.145] Compiled dir.lua
+[2.145] Initializing VFS class...
+[2.145] VFS module fully loaded
+[2.145] Creating new VFS instance
+[2.145] Creating directory at: /home
+[2.145] Splitting path: /home
+[2.145] Directory created: /home
+[2.146] Creating directory at: /home/user
+[2.146] Splitting path: /home/user
+[2.146] Directory created: /home/user
+[2.146] Creating file at: /home/user/readme.txt
+[2.146] Splitting path: /home/user/readme.txt
+[2.146] File created: /home/user/readme.txt
+[2.146] Reading file: /home/user/readme.txt
+[2.146] Resolving path: /home/user/readme.txt
+[2.146] Splitting path: /home/user/readme.txt
+[2.146] Resolved path successfully: /home/user/readme.txt
+[2.146] File read successfully: /home/user/readme.txt
+[2.146] Listing directory: /home
+[2.146] Resolving path: /home
+[2.146] Splitting path: /home
+[2.146] Resolved path successfully: /home
+[2.146] Directory listed: /home
+[2.146] Removing: /home/user/readme.txt
+[2.146] Splitting path: /home/user/readme.txt
+[2.147] Removed: /home/user/readme.txt
+[2.147] Reading file: /home/user/readme.txt
+[2.147] Resolving path: /home/user/readme.txt
+[2.147] Splitting path: /home/user/readme.txt
+[2.147] Resolve failed: Path not found - readme.txt
+[2.147] Read failed: Path not found: readme.txt
+[2.597] Loaded file.lua source
+[2.598] Compiled file.lua
+[2.598] Loaded dir.lua source
+[2.598] Compiled dir.lua
+[2.598] Initializing VFS class...
+[2.598] VFS module fully loaded
+[2.598] Creating new VFS instance
+[2.598] Creating directory at: /home
+[2.598] Splitting path: /home
+[2.598] Directory created: /home
+[2.598] Creating directory at: /home/user
+[2.598] Splitting path: /home/user
+[2.598] Directory created: /home/user
+[2.598] Creating file at: /home/user/readme.txt
+[2.598] Splitting path: /home/user/readme.txt
+[2.598] File created: /home/user/readme.txt
+[2.598] Reading file: /home/user/readme.txt
+[2.599] Resolving path: /home/user/readme.txt
+[2.599] Splitting path: /home/user/readme.txt
+[2.599] Resolved path successfully: /home/user/readme.txt
+[2.599] File read successfully: /home/user/readme.txt
+[2.599] Listing directory: /home
+[2.599] Resolving path: /home
+[2.599] Splitting path: /home
+[2.599] Resolved path successfully: /home
+[2.599] Directory listed: /home
+[2.599] Removing: /home/user/readme.txt
+[2.599] Splitting path: /home/user/readme.txt
+[2.599] Removed: /home/user/readme.txt
+[2.599] Reading file: /home/user/readme.txt
+[2.599] Resolving path: /home/user/readme.txt
+[2.599] Splitting path: /home/user/readme.txt
+[2.599] Resolve failed: Path not found - readme.txt
+[2.599] Read failed: Path not found: readme.txt
+[1.499] Loaded file.lua source
+[1.499] Compiled file.lua
+[1.5] Loaded dir.lua source
+[1.5] Compiled dir.lua
+[1.5] Initializing VFS class...
+[1.5] VFS module fully loaded
+[1.5] No valid snapshot loaded.
+[1.5] Creating new VFS instance
+[1.5] Creating directory at: /home
+[1.5] Splitting path: /home
+[1.5] Directory created: /home
+[1.5] Creating directory at: /home/user
+[1.5] Splitting path: /home/user
+[1.5] Directory created: /home/user
+[1.5] Creating file at: /home/user/readme.txt
+[1.5] Splitting path: /home/user/readme.txt
+[1.5] File created: /home/user/readme.txt
+[1.5] Reading file: /home/user/readme.txt
+[1.5] Resolving path: /home/user/readme.txt
+[1.5] Splitting path: /home/user/readme.txt
+[1.5] Resolved path successfully: /home/user/readme.txt
+[1.501] File read successfully: /home/user/readme.txt
+[1.501] Listing directory: /home
+[1.501] Resolving path: /home
+[1.501] Splitting path: /home
+[1.501] Resolved path successfully: /home
+[1.501] Directory listed: /home
+[1.501] Removing: /home/user/readme.txt
+[1.501] Splitting path: /home/user/readme.txt
+[1.501] Removed: /home/user/readme.txt
+[1.501] Reading file: /home/user/readme.txt
+[1.501] Resolving path: /home/user/readme.txt
+[1.501] Splitting path: /home/user/readme.txt
+[1.501] Resolve failed: Path not found - readme.txt
+[1.501] Read failed: Path not found: readme.txt
+[1.501] Saving VFS snapshot to: /VFS/snapshots/snapshot-1749382520361.lua
+[1.501] Snapshot save failed: [string "/VFS/vfs.lua"]:200: attempt to index global 'textutils' (a nil value)
+[3.049] Loaded file.lua source
+[3.049] Compiled file.lua
+[3.049] Loaded dir.lua source
+[3.049] Compiled dir.lua
+[3.049] Initializing VFS class...
+[3.049] VFS module fully loaded
+[3.049] Trying snapshot: /VFS/snapshots/snapshot-1749382520361.lua
+[3.049] No valid snapshot loaded.
+[3.049] Creating new VFS instance
+[3.049] Creating directory at: /home
+[3.05] Splitting path: /home
+[3.05] Directory created: /home
+[3.05] Creating directory at: /home/user
+[3.05] Splitting path: /home/user
+[3.05] Directory created: /home/user
+[3.05] Creating file at: /home/user/readme.txt
+[3.05] Splitting path: /home/user/readme.txt
+[3.05] File created: /home/user/readme.txt
+[3.05] Reading file: /home/user/readme.txt
+[3.05] Resolving path: /home/user/readme.txt
+[3.05] Splitting path: /home/user/readme.txt
+[3.05] Resolved path successfully: /home/user/readme.txt
+[3.05] File read successfully: /home/user/readme.txt
+[3.05] Listing directory: /home
+[3.05] Resolving path: /home
+[3.05] Splitting path: /home
+[3.05] Resolved path successfully: /home
+[3.05] Directory listed: /home
+[3.05] Removing: /home/user/readme.txt
+[3.05] Splitting path: /home/user/readme.txt
+[3.05] Removed: /home/user/readme.txt
+[3.05] Reading file: /home/user/readme.txt
+[3.05] Resolving path: /home/user/readme.txt
+[3.05] Splitting path: /home/user/readme.txt
+[3.05] Resolve failed: Path not found - readme.txt
+[3.05] Read failed: Path not found: readme.txt
+[3.05] Saving VFS snapshot to: /VFS/snapshots/snapshot-1749382535437.lua
+[3.051] Snapshot save failed: [string "/VFS/vfs.lua"]:200: attempt to index global 'textutils' (a nil value)
+[1.345] Loaded file.lua source
+[1.345] Compiled file.lua
+[1.345] Loaded dir.lua source
+[1.346] Compiled dir.lua
+[1.346] Initializing VFS class...
+[1.346] VFS module fully loaded
+[1.759] Loaded file.lua source
+[1.76] Compiled file.lua
+[1.76] Loaded dir.lua source
+[1.76] Compiled dir.lua
+[1.76] Initializing VFS class...
+[1.76] VFS module fully loaded
+[1.485] Loaded file.lua source
+[1.485] Compiled file.lua
+[1.485] Loaded dir.lua source
+[1.485] Compiled dir.lua
+[1.485] Initializing VFS class...
+[1.486] VFS module fully loaded
+[1.486] Creating new VFS instance
+[1.486] Creating directory at: /home
+[1.486] Splitting path: /home
+[1.486] Directory created: /home
+[1.486] Creating directory at: /home/user
+[1.486] Splitting path: /home/user
+[1.486] Directory created: /home/user
+[1.486] Creating file at: /home/user/readme.txt
+[1.486] Splitting path: /home/user/readme.txt
+[1.486] File created: /home/user/readme.txt
+[1.486] Reading file: /home/user/readme.txt
+[1.486] Resolving path: /home/user/readme.txt
+[1.486] Splitting path: /home/user/readme.txt
+[1.486] Resolved path successfully: /home/user/readme.txt
+[1.486] File read successfully: /home/user/readme.txt
+[1.486] Listing directory: /home
+[1.486] Resolving path: /home
+[1.486] Splitting path: /home
+[1.486] Resolved path successfully: /home
+[1.486] Directory listed: /home
+[1.486] Removing: /home/user/readme.txt
+[1.486] Splitting path: /home/user/readme.txt
+[1.486] Removed: /home/user/readme.txt
+[1.486] Reading file: /home/user/readme.txt
+[1.487] Resolving path: /home/user/readme.txt
+[1.487] Splitting path: /home/user/readme.txt
+[1.487] Resolve failed: Path not found - readme.txt
+[1.487] Read failed: Path not found: readme.txt
+[2.009] Loaded file.lua source
+[2.009] Compiled file.lua
+[2.009] Loaded dir.lua source
+[2.009] Compiled dir.lua
+[2.009] Initializing VFS class...
+[2.009] VFS module fully loaded
+[2.009] Creating new VFS instance
+[2.01] Creating directory at: /home
+[2.01] Splitting path: /home
+[2.01] Directory created: /home
+[2.01] Creating directory at: /home/user
+[2.01] Splitting path: /home/user
+[2.01] Directory created: /home/user
+[2.01] Creating file at: /home/user/readme.txt
+[2.01] Splitting path: /home/user/readme.txt
+[2.01] File created: /home/user/readme.txt
+[2.01] Reading file: /home/user/readme.txt
+[2.01] Resolving path: /home/user/readme.txt
+[2.01] Splitting path: /home/user/readme.txt
+[2.01] Resolved path successfully: /home/user/readme.txt
+[2.01] File read successfully: /home/user/readme.txt
+[2.01] Listing directory: /home
+[2.01] Resolving path: /home
+[2.01] Splitting path: /home
+[2.01] Resolved path successfully: /home
+[2.01] Directory listed: /home
+[2.01] Removing: /home/user/readme.txt
+[2.01] Splitting path: /home/user/readme.txt
+[2.01] Removed: /home/user/readme.txt
+[2.01] Reading file: /home/user/readme.txt
+[2.01] Resolving path: /home/user/readme.txt
+[2.01] Splitting path: /home/user/readme.txt
+[2.01] Resolve failed: Path not found - readme.txt
+[2.01] Read failed: Path not found: readme.txt
+[1.612] Loaded file.lua source
+[1.612] Compiled file.lua
+[1.613] Loaded dir.lua source
+[1.613] Compiled dir.lua
+[1.613] Initializing VFS class...
+[1.613] VFS module fully loaded
+[1.613] Creating new VFS instance
+[1.613] Creating directory at: /home
+[1.613] Splitting path: /home
+[1.613] Directory created: /home
+[1.613] Creating directory at: /home/user
+[1.613] Splitting path: /home/user
+[1.613] Directory created: /home/user
+[1.613] Creating file at: /home/user/readme.txt
+[1.613] Splitting path: /home/user/readme.txt
+[1.613] File created: /home/user/readme.txt
+[1.613] Reading file: /home/user/readme.txt
+[1.613] Resolving path: /home/user/readme.txt
+[1.613] Splitting path: /home/user/readme.txt
+[1.613] Resolved path successfully: /home/user/readme.txt
+[1.613] File read successfully: /home/user/readme.txt
+[1.613] Listing directory: /home
+[1.613] Resolving path: /home
+[1.613] Splitting path: /home
+[1.614] Resolved path successfully: /home
+[1.614] Directory listed: /home
+[1.614] Removing: /home/user/readme.txt
+[1.614] Splitting path: /home/user/readme.txt
+[1.614] Removed: /home/user/readme.txt
+[1.614] Reading file: /home/user/readme.txt
+[1.614] Resolving path: /home/user/readme.txt
+[1.614] Splitting path: /home/user/readme.txt
+[1.614] Resolve failed: Path not found - readme.txt
+[1.614] Read failed: Path not found: readme.txt

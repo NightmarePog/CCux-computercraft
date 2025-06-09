@@ -59,4 +59,30 @@ function Dir.fromTable(tbl)
   return obj
 end
 
+
+function Dir:serialize()
+  local result = {
+    type = "dir",
+    name = self.name,
+    children = {}
+  }
+  for name, node in pairs(self.entries) do
+    result.children[name] = node:serialize()
+  end
+  return result
+end
+
+function Dir.deserialize(data)
+  local dir = Dir:new(data.name)
+  for name, child in pairs(data.children or {}) do
+    if child.type == "dir" then
+      dir:add(name, Dir.deserialize(child))
+    elseif child.type == "file" then
+      dir:add(name, File.deserialize(child))
+    end
+  end
+  return dir
+end
+
+
 return Dir
