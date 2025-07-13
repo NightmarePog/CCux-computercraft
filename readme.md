@@ -1,4 +1,4 @@
-# YuuOS
+# some random CC test OS
 ## an unfinished version
 This is kind of bigger project where I am trying to create much more secure and much more Unix-like OS for computercraft
 but also keeping all the old APIs so there is maximal compatibility with CraftOS
