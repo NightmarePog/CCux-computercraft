@@ -1,3 +1,5 @@
+# THIS PROJECT IS NOT DEVELOPED ANYMORE
+i kind of lost will to actually work on this. also for some reason i am not happy that CC is not enough low level
 # some random CC test OS
 ## an unfinished version
 This is kind of bigger project where I am trying to create much more secure and much more Unix-like OS for computercraft
