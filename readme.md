@@ -1,30 +1,57 @@
-# THIS PROJECT IS NOT DEVELOPED ANYMORE
-i kind of lost will to actually work on this. also for some reason i am not happy that CC is not enough low level
-# some random CC test OS
-## an unfinished version
-This is kind of bigger project where I am trying to create much more secure and much more Unix-like OS for computercraft
-but also keeping all the old APIs so there is maximal compatibility with CraftOS
+# CCux
 
-# TODO
-new File system
-completely isolate unix-like kernel from OS
-permission manager
-shell
-unix like standard commands(cat, man, stuff u know in linux and other unix like OS)
-basic git program
-X window
-Package Manager
-Unix permission system
+CCux is an experimental Unix-like Lua operating system for CC: Tweaked and
+OpenComputers. Both editions use the same process scheduler, syscall API,
+permission-aware VFS, descriptors, pipes, program loader, and userspace. Small
+platform adapters translate each mod's storage, terminal, events, devices, and
+power controls.
 
-# some info
-Right now, OS will be made basically again from roots because I wanna create some real safe kernel and this just couldn't work with it 
+The repository currently contains the kernel foundation and a bootable terminal
+alpha. It is not yet POSIX conforming and should not be used for important data.
 
-btw, big thanks to the CC community, without them I could never even start this project
-:3
+## Implemented foundation
 
-also, I am not really good programmer so the code might not be really good
+- One cooperative dispatcher with process states, indexed event waits, timer
+  heap, parent/child lifecycle, signals, zombies, and resource cleanup.
+- Process-local globals, `package.loaded`, `require`, `load`, `loadfile`, and
+  `dofile`, with VFS permission checks and bounded source caching.
+- Native, CraftOS, and OpenOS runtime profiles. The compatibility profiles are
+  intentionally incomplete but cannot access raw host APIs.
+- Inode-based managed storage with modes, ownership, directories, links,
+  chunked files, a checksummed metadata journal, and `fsck` support.
+- File descriptors, descriptor inheritance, `dup`, bounded pipes, backpressure,
+  EOF, and broken-pipe errors.
+- Minimal PID 1, shell, and basic filesystem/text commands.
+- CC: Tweaked UnBIOS entry and OpenComputers `/init.lua`/EEPROM entries.
 
-# Thanks to the
-## JackMacWindows - for unbios script
-## Ocawesome101 - part of Recrafted(his OS) is used in CCux kernel
-:3
+See [the architecture](docs/architecture.md) and [current status](docs/status.md).
+
+## Development
+
+```sh
+lua5.1 tests/run.lua
+lua5.4 tests/run.lua
+```
+
+For Ocelot Desktop, keep its workspace outside version control and synchronize
+CCux into a dedicated disk directory:
+
+```sh
+tools/sync-ocelot.sh ocelot/<ccux-disk-uuid>
+```
+
+The script backs up an existing `init.lua`. Do not point it at an OpenOS or
+MineOS reference disk.
+
+## Boot layout
+
+Install this repository as `/ccux` on an OpenComputers boot disk and copy
+`/ccux/boot/opencomputers.lua` to `/init.lua`. The EEPROM alternative is
+`boot/opencomputers-eeprom.lua`.
+
+On CC: Tweaked, install the repository as `/ccux`, place `bios.lua` at `/bios.lua`,
+and run the attributed `unbios.lua` from startup. A development layout with
+`boot/`, `src/`, and `rootfs/` at disk root also works.
+
+`unbios.lua` retains its original MIT attribution to JackMacWindows. CCux uses
+OpenOS and Phoenix as behavioral references; their code is not copied here.
